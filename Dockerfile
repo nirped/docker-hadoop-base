@@ -25,3 +25,6 @@ RUN chmod 0744 /tmp/bootstrap.sh
 RUN touch /tmp/.EMPTY
 
 CMD /tmp/bootstrap.sh
+
+
+

@@ -1,0 +1,16 @@
+[core-site]
+src = "core-site.xml.tmpl"
+dest = "/opt/hadoop/etc/hadoop/core-site.xml"
+keys = [ "/hadoop" ]
+
+[hdfs-site]
+src = "hdfs-site.xml.tmpl"
+dest = "/opt/hadoop/etc/hadoop/hdfs-site.xml"
+keys = [ "/hadoop" ]
+
+[hadoop-env]
+src = "hadoop-env.sh.tmpl"
+dest = "/opt/hadoop/etc/hadoop/hadoop-env.sh"
+keys = [ "/hadoop" ]
+mode = "0644"
+

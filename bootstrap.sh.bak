@@ -1,0 +1,6 @@
+#!/bin/sh
+
+confd -log-level="debug" -onetime -backend env -config-file /etc/confd/conf.d/core-site.toml
+confd -log-level="debug" -onetime -backend env -config-file /etc/confd/conf.d/hdfs-site.toml
+confd -log-level="debug" -onetime -backend env -config-file /etc/confd/conf.d/hadoop-env.toml
+cat /opt/hadoop/etc/hadoop/core-site.xml
